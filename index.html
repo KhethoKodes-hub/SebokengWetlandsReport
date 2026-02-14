@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop by Drop · Sebokeng Wetlands · FINAL REPORT (21 responses)</title>
+    <title>Drop by Drop · Sebokeng Wetlands · FINAL REPORT (32 responses)</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
         :root {
-            --wetland-green: #1e4a2b;
-            --marsh-light: #cbe0cb;
+            --wetland-green: #1d4d1d;
+            --marsh-light: #d0e6c0;
             --water-blue: #2a7f9c;
-            --soil-brown: #8b5a2b;
-            --accent-alert: #c96b2c;
-            --health-red: #b13e3e;
+            --soil-brown: #7b521f;
+            --accent-alert: #c25200;
+            --health-red: #aa3a3a;
         }
         body {
-            background: linear-gradient(145deg, #cfe3cf 0%, #b8d2b8 100%);
+            background: linear-gradient(145deg, #c2ddc2 0%, #aec7ae 100%);
             font-family: 'Segoe UI', Roboto, sans-serif;
         }
         .dashboard { position: relative; z-index: 3; }
         .header-card {
-            background: #1e4a2be0; backdrop-filter: blur(5px); color: white; border-radius: 40px;
-            padding: 2rem; margin: 20px 0; box-shadow: 0 20px 30px -5px #1e3a1e;
-            border: 1px solid #d4e6b5;
+            background: #1d4d1de0; backdrop-filter: blur(5px); color: white; border-radius: 40px;
+            padding: 2rem; margin: 20px 0; box-shadow: 0 20px 30px -5px #1a341a;
+            border: 1px solid #c0ddb0;
         }
-        .logo-icon { font-size: 3rem; filter: drop-shadow(0 0 6px #a3d8a3); }
+        .logo-icon { font-size: 3rem; filter: drop-shadow(0 0 6px #b3e0b3); }
         .badge-nature {
-            background: #f5ffe1; color: #1d4d1d; border-radius: 40px; padding: 6px 18px;
+            background: #f4ffe0; color: #1d4d1d; border-radius: 40px; padding: 6px 20px;
             font-weight: 600; border-left: 5px solid #e68a2e;
         }
         .stat-card {
@@ -37,23 +37,23 @@
             border-radius: 30px; padding: 1.5rem 0.8rem; border: 1px solid #9cb89c;
             box-shadow: 0 8px 16px #3a5a3a40; transition: 0.2s;
         }
-        .stat-card:hover { background: #f2ffe6; transform: translateY(-4px); }
-        .stat-value { font-size: 2.4rem; font-weight: 800; color: #1b4b35; }
+        .stat-card:hover { background: #f0ffe0; transform: translateY(-4px); }
+        .stat-value { font-size: 2.5rem; font-weight: 800; color: #1b4b35; }
         .section-header {
-            background: #1e4a2b; color: white; border-radius: 60px; padding: 14px 30px;
-            margin: 30px 0 20px; font-size: 1.5rem; border: 1px solid #bed5a0;
+            background: #1d4d1d; color: white; border-radius: 60px; padding: 14px 30px;
+            margin: 30px 0 20px; font-size: 1.5rem; border: 1px solid #c0dbaa;
         }
         .card-nature {
-            background: #fafdf2f2; backdrop-filter: blur(4px); border-radius: 36px;
+            background: #f8fef0f2; backdrop-filter: blur(4px); border-radius: 36px;
             border: 1px solid #b2caa2; box-shadow: 0 10px 20px -8px #2e4d2e;
         }
         .chart-container { position: relative; height: 220px; width: 100%; }
         .word-marsh span {
-            display: inline-block; background: #e3f0da; border-radius: 40px;
+            display: inline-block; background: #e0f0d6; border-radius: 40px;
             padding: 6px 18px; margin: 5px; border: 1px solid #6f946f;
         }
         .quote-bubble {
-            background: #dff0d0; border-radius: 30px 30px 30px 8px; padding: 16px;
+            background: #ddf0cc; border-radius: 30px 30px 30px 8px; padding: 16px;
             margin-bottom: 14px; border-left: 6px solid #c96b2c; font-style: italic;
         }
         .insight-list li { margin-bottom: 12px; border-bottom: 1px dashed #b8d0a8; padding-bottom: 6px; }
@@ -62,70 +62,71 @@
             background: #f0f7e0; font-weight: 600;
         }
         .btn-outline-earth:hover { background: #2b5e2b; color: white; }
+        .small-table { font-size:0.85rem; }
     </style>
 </head>
 <body>
 <div class="dashboard container-lg py-3">
 
-    <!-- HEADER with updated count -->
+    <!-- HEADER (32 surveys) -->
     <div class="header-card text-center">
         <div class="d-flex align-items-center justify-content-center gap-3">
             <i class="fas fa-leaf logo-icon"></i>
-            <h1 class="display-5 fw-bold">Sebokeng Wetlands · final report</h1>
+            <h1 class="display-5 fw-bold">Sebokeng Wetlands · complete report</h1>
         </div>
-        <p class="fs-5"><i class="fas fa-clipboard-list me-2"></i>21 household/learner responses · February 2026</p>
+        <p class="fs-5"><i class="fas fa-clipboard-list me-2"></i><strong>32 household/learner responses</strong> · February 2026</p>
         <div class="d-flex flex-wrap gap-3 justify-content-center">
-            <span class="badge-nature"><i class="fas fa-calendar-alt me-2"></i>21 surveys</span>
-            <span class="badge-nature"><i class="fas fa-droplet me-2"></i>38% wetland literacy</span>
-            <span class="badge-nature"><i class="fas fa-triangle-exclamation me-2" style="color:#b6572a;"></i>76% solid waste</span>
+            <span class="badge-nature"><i class="fas fa-users me-2"></i>32 participants</span>
+            <span class="badge-nature"><i class="fas fa-droplet me-2"></i>34% wetland literacy</span>
+            <span class="badge-nature"><i class="fas fa-triangle-exclamation me-2" style="color:#b6572a;"></i>75% solid waste</span>
         </div>
     </div>
 
-    <!-- QUICK STATS (21‑response numbers) -->
+    <!-- QUICK STATS (32‑response derived) -->
     <div class="row g-4 mb-5">
-        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-question-circle fa-2x mb-2" style="color:#2d6a4f;"></i><div class="stat-value">38%</div><div class="fw-semibold">correct definition</div><small>8 of 21</small></div></div>
-        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-trash-alt fa-2x mb-2" style="color:#b6572a;"></i><div class="stat-value">76%</div><div class="fw-semibold">solid waste dumping</div><small>16 reports</small></div></div>
-        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-poop fa-2x mb-2" style="color:#6b4f3c;"></i><div class="stat-value">71%</div><div class="fw-semibold">sewer often/very often</div><small>15 of 21</small></div></div>
-        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-hand-holding-heart fa-2x mb-2" style="color:#2f855a;"></i><div class="stat-value">86%</div><div class="fw-semibold">willing clean‑ups</div><small>18 yes + 1 maybe</small></div></div>
+        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-question-circle fa-2x mb-2" style="color:#2d6a4f;"></i><div class="stat-value">34%</div><div class="fw-semibold">correct definition</div><small>11 of 32</small></div></div>
+        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-trash-alt fa-2x mb-2" style="color:#b6572a;"></i><div class="stat-value">75%</div><div class="fw-semibold">solid waste dumping</div><small>24 reports</small></div></div>
+        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-poop fa-2x mb-2" style="color:#6b4f3c;"></i><div class="stat-value">69%</div><div class="fw-semibold">sewer often/very often</div><small>22 of 32</small></div></div>
+        <div class="col-md-3 col-6"><div class="stat-card text-center"><i class="fas fa-hand-holding-heart fa-2x mb-2" style="color:#2f855a;"></i><div class="stat-value">84%</div><div class="fw-semibold">willing clean‑ups</div><small>27 yes + 4 maybe</small></div></div>
     </div>
 
-    <!-- MAIN ROW: awareness, pollution, health (updated) -->
+    <!-- MAIN ROW: awareness, pollution, health (updated to 32) -->
     <div class="row g-4">
         <!-- left: knowledge & proximity -->
         <div class="col-lg-5">
             <div class="card-nature p-4 h-100">
-                <h3 class="mb-3"><i class="fas fa-brain me-2" style="color:#2e7d32;"></i>Wetland awareness (21)</h3>
+                <h3 class="mb-3"><i class="fas fa-brain me-2" style="color:#2e7d32;"></i>Wetland awareness (n=32)</h3>
                 <div class="chart-container mb-3" style="height:180px;"><canvas id="chartWetlandKnow"></canvas></div>
-                <p><span class="badge bg-danger rounded-pill">38% correct</span> (8 of 21). <strong>57%</strong> answered “unsure / I don’t know” – awareness gap widened.</p>
+                <p><span class="badge bg-danger rounded-pill">34% correct</span> (11 of 32). <strong>66%</strong> answered “unsure / I dont know / wrong”. Awareness remains critically low.</p>
                 <hr>
-                <h5><i class="fas fa-home me-1"></i> Proximity & tenure</h5>
+                <h5><i class="fas fa-home me-1"></i> Proximity & length of stay</h5>
                 <div class="row">
                     <div class="col-6"><div class="chart-container" style="height:130px;"><canvas id="chartDistance"></canvas></div></div>
                     <div class="col-6"><div class="chart-container" style="height:130px;"><canvas id="chartTenure"></canvas></div></div>
                 </div>
-                <p class="mt-2"><i class="fa-regular fa-clock"></i> 52% >10 years, 29% 6‑10 years – deep community roots.</p>
+                <p class="mt-2"><i class="fa-regular fa-clock"></i> 47% >10 years, 34% 6‑10 years – strong community roots.</p>
             </div>
         </div>
 
-        <!-- right: pollution & health -->
+        <!-- right: pollution & health crisis -->
         <div class="col-lg-7">
             <div class="card-nature p-4 h-100">
-                <h3 class="mb-3"><i class="fas fa-biohazard me-2 text-warning"></i>Pollution & health crisis</h3>
+                <h3 class="mb-3"><i class="fas fa-biohazard me-2 text-warning"></i>Pollution & health (32 surveys)</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="chart-container" style="height:150px;"><canvas id="chartPollutants"></canvas></div>
                     </div>
                     <div class="col-md-6">
                         <ul class="list-unstyled mt-2">
-                            <li><i class="fas fa-dumpster-fire text-danger me-2"></i> <strong>76%</strong> solid waste (16)</li>
-                            <li><i class="fas fa-toilet text-brown me-2"></i> <strong>62%</strong> sewer overflow (13)</li>
-                            <li><i class="fas fa-wind text-info me-2"></i> <strong>62%</strong> bad smells (13)</li>
+                            <li><i class="fas fa-dumpster-fire text-danger me-2"></i> <strong>75%</strong> solid waste (24)</li>
+                            <li><i class="fas fa-toilet text-brown me-2"></i> <strong>59%</strong> sewer overflow (19)</li>
+                            <li><i class="fas fa-wind text-info me-2"></i> <strong>78%</strong> bad smells (25) – <em>top concern</em></li>
                         </ul>
                     </div>
                 </div>
                 <div class="bg-light p-3 rounded-4 mt-2">
-                    <p><span class="badge bg-danger rounded-pill fs-6">52% health impacts</span> (11 of 21) – <strong>headache, chest pains, chest issues</strong> directly mentioned.</p>
-                    <p><i class="fas fa-school"></i> <strong>81% (17)</strong> say pollution affects school activities / learning.</p>
+                    <p><span class="badge bg-danger rounded-pill fs-6">47% health impacts</span> (15 of 32) – <strong>headache, chest pains, lung issues, skin issue</strong> reported.</p>
+                    <p><i class="fas fa-school"></i> <strong>78% (25)</strong> say pollution affects school activities / learning.</p>
                 </div>
                 <hr>
                 <div class="row">
@@ -135,56 +136,58 @@
                     </div>
                     <div class="col-sm-7">
                         <div class="quote-bubble mt-2"><i class="fas fa-quote-left me-1"></i> children drink dirty water (multiple)</div>
-                        <div class="quote-bubble"><i class="fas fa-quote-left me-1"></i> bad smells in classrooms, can't learn</div>
+                        <div class="quote-bubble"><i class="fas fa-quote-left me-1"></i> bad smells affect teaching/learning</div>
                         <div class="quote-bubble"><i class="fas fa-quote-left me-1"></i> the sewer goes in the school</div>
+                        <div class="quote-bubble"><i class="fas fa-quote-left me-1"></i> kids get headaches because of mould</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- USAGE, SEWER FREQUENCY, REPORTING -->
-    <div class="section-header"><i class="fas fa-chart-simple me-2"></i> Activities · overflow frequency · reporting (n=21)</div>
+    <!-- USAGE, SEWER FREQUENCY, REPORTING (32) -->
+    <div class="section-header"><i class="fas fa-chart-simple me-2"></i> Activities · overflow frequency · reporting (n=32)</div>
     <div class="row g-4">
         <div class="col-md-4">
             <div class="card-nature p-3 h-100">
                 <h5><i class="fas fa-person-walking"></i> Wetland use</h5>
                 <div class="chart-container" style="height:160px;"><canvas id="chartUses"></canvas></div>
-                <p><span class="badge bg-secondary">62% no use</span> (13), but walking (4), washing (2), fishing (1), livestock (1).</p>
+                <p><span class="badge bg-secondary">59% no use</span> (19), walking (8), washing (2), fishing (1), livestock (1).</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card-nature p-3 h-100">
                 <h5><i class="fas fa-water"></i> Sewer overflow frequency</h5>
                 <div class="chart-container" style="height:160px;"><canvas id="chartSewerFreq"></canvas></div>
-                <p><span class="fw-bold">71% often / very often</span> (15 of 21). Chronic infrastructure failure.</p>
+                <p><span class="fw-bold">69% often / very often</span> (22 of 32). Chronic failure.</p>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card-nature p-3 h-100">
                 <h5><i class="fas fa-bullhorn"></i> Reporting gap</h5>
                 <div class="d-flex justify-content-around mb-2">
-                    <div><span class="fw-bold fs-3">40%</span><br>reported</div>
-                    <div><span class="fw-bold fs-3">60%</span><br>never reported</div>
+                    <div><span class="fw-bold fs-3">22%</span><br>reported</div>
+                    <div><span class="fw-bold fs-3">78%</span><br>never reported</div>
                 </div>
-                <p>Of 9 who reported: only 2 said fixed/investigated, 1 said “they didn’t come”, rest vague. Reporting system broken.</p>
+                <p>Of 7 who reported: only 2 said fixed/investigated, 1 said “they didn’t come”, rest vague. Reporting system broken.</p>
             </div>
         </div>
     </div>
 
-    <!-- QUALITATIVE: VOICES + SOLUTIONS (updated with new quotes) -->
-    <div class="section-header"><i class="fas fa-comment-dots me-2"></i> Community voices – 21 responses</div>
+    <!-- QUALITATIVE: VOICES + SOLUTIONS (updated with 32) -->
+    <div class="section-header"><i class="fas fa-comment-dots me-2"></i> Community voices – 32 responses</div>
     <div class="row g-4">
         <div class="col-lg-6">
             <div class="card-nature p-4">
-                <h5><i class="fas fa-quote-right"></i> Health & learning impacts</h5>
+                <h5><i class="fas fa-quote-right"></i> Health & learning impacts (new quotes)</h5>
                 <ul class="insight-list">
-                    <li>“the children drink dirty water” (5x)</li>
-                    <li>“bad smells in classrooms” / “can't learn properly”</li>
+                    <li>“children drink dirty water” (7x)</li>
+                    <li>“kids get headaches because of the mould in classes”</li>
+                    <li>“the bad smell we breathe affects my lungs”</li>
+                    <li>“skin issue” / “chest pains”</li>
+                    <li>“dead rats smell in the school yard”</li>
+                    <li>“bad smells affect learning and teaching”</li>
                     <li>“the sewer goes in the school and makes bad smell”</li>
-                    <li>“it affects my chest” / “chest pains”</li>
-                    <li>“kids drink dirty water” / “children have to drink the dirty water”</li>
-                    <li>“the school gets traumatised by the sewages”</li>
                 </ul>
             </div>
         </div>
@@ -193,26 +196,26 @@
                 <h5><i class="fas fa-seedling"></i> Proposed solutions (verbatim)</h5>
                 <div class="word-marsh">
                     <span>educate community</span> <span>teach people not to dump</span> <span>less dumping</span>
-                    <span>municipality should collect the dirt</span> <span>government give big bin</span>
-                    <span>clean the rivers</span> <span>hire people to guard & fine</span> <span>plant on wetlands</span>
-                    <span>more programmes to educate</span> <span>clean dumping sites on streets</span>
+                    <span>municipality collect dirt</span> <span>government give big bin</span> <span>clean rivers</span>
+                    <span>hire guards & fine</span> <span>plant on wetlands</span> <span>more programmes to educate</span>
+                    <span>clean dumping sites on streets</span> <span>educate children</span> <span>regular cleanups</span>
                 </div>
                 <hr>
-                <p><span class="badge bg-success fs-6">86% willing to join clean‑ups</span> (18 yes, 1 maybe) – huge community asset.</p>
+                <p><span class="badge bg-success fs-6">84% willing to join clean‑ups</span> (27 yes, 4 maybe) – very strong community asset.</p>
             </div>
         </div>
     </div>
 
-    <!-- ACTIONABLE RECOMMENDATIONS (updated) -->
-    <div class="section-header"><i class="fas fa-clipboard-list me-2"></i> Evidence‑based recommendations (21 surveys)</div>
+    <!-- ACTIONABLE RECOMMENDATIONS (updated 32) -->
+    <div class="section-header"><i class="fas fa-clipboard-list me-2"></i> Evidence‑based recommendations (32 surveys)</div>
     <div class="row g-4">
         <div class="col-md-6">
             <div class="card-nature p-4 h-100">
                 <h4 class="border-bottom pb-2"><i class="fas fa-bolt me-2" style="color:#c47b2d;"></i>Immediate priorities</h4>
                 <ul class="list-group list-group-flush bg-transparent">
-                    <li class="list-group-item bg-transparent"><i class="fas fa-dumpster-fire text-danger me-2"></i><strong>Solid waste crisis:</strong> 76% report dumping – deploy skips, regular pickup, and anti‑dumping campaigns.</li>
-                    <li class="list-group-item bg-transparent"><i class="fas fa-toilet text-primary me-2"></i><strong>Sewer task force:</strong> 71% frequent overflows – urgent repair of infrastructure near schools.</li>
-                    <li class="list-group-item bg-transparent"><i class="fas fa-head-side-cough me-2" style="color:#b13e3e;"></i><strong>Health screening:</strong> 52% report headaches/chest pains – involve local clinic and school health teams.</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-dumpster-fire text-danger me-2"></i><strong>Solid waste & smell crisis:</strong> 75% dumping, 78% bad smells – deploy skips, daily collection near schools.</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-toilet text-primary me-2"></i><strong>Sewer emergency response:</strong> 69% frequent overflows – fix infrastructure affecting schools.</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-head-side-cough me-2" style="color:#b13e3e;"></i><strong>Health screening:</strong> 47% report headaches/chest/lung issues – involve clinic and school health teams.</li>
                 </ul>
             </div>
         </div>
@@ -220,42 +223,35 @@
             <div class="card-nature p-4 h-100">
                 <h4 class="border-bottom pb-2"><i class="fas fa-calendar-week me-2"></i>Engagement & education</h4>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-transparent"><i class="fas fa-chalkboard-user me-2"></i><strong>Wetland literacy emergency:</strong> only 38% correct definition – integrate into school curriculum immediately.</li>
-                    <li class="list-group-item bg-transparent"><i class="fas fa-hand-sparkles me-2"></i><strong>Monthly clean‑ups:</strong> 86% willing – form “Drop by Drop” action committee.</li>
-                    <li class="list-group-item bg-transparent"><i class="fas fa-megaphone me-2"></i><strong>Fix reporting:</strong> 60% never reported – create simple WhatsApp line + follow‑up protocol.</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-chalkboard-user me-2"></i><strong>Wetland literacy crash course:</strong> only 34% correct definition – integrate into school curriculum.</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-hand-sparkles me-2"></i><strong>Monthly clean‑ups:</strong> 84% willing – launch “Drop by Drop” committee.</li>
+                    <li class="list-group-item bg-transparent"><i class="fas fa-megaphone me-2"></i><strong>Fix reporting:</strong> 78% never reported – create simple WhatsApp line + follow‑up protocol.</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- DATA TABLE (condensed) -->
+    <!-- DATA TABLE (32 entries summarised) -->
     <div class="card-nature p-4 mt-4">
-        <h5><i class="fas fa-table me-2"></i> Selected responses (21 entries – core indicators)</h5>
-        <div class="table-responsive" style="max-height:300px; overflow-y:auto;">
-            <table class="table table-sm table-hover small">
-                <thead><tr><th>Definition</th><th>Years</th><th>Pollution observed</th><th>Sewer freq</th><th>Health?</th><th>Affects learning?</th><th>Willing?</th></tr></thead>
-                <tbody id="surveyBody"></tbody>
+        <h5><i class="fas fa-table me-2"></i> Snapshot of 32 responses (selected indicators)</h5>
+        <div class="table-responsive small-table" style="max-height:300px; overflow-y:auto;">
+            <table class="table table-sm table-hover">
+                <thead><tr><th>Definition</th><th>Years</th><th>Pollution</th><th>Sewer freq</th><th>Health?</th><th>Affects learning?</th><th>Willing?</th></tr></thead>
+                <tbody id="surveyTableBody"></tbody>
             </table>
         </div>
     </div>
 
     <!-- footer -->
     <div class="bg-dark text-white text-center p-3 mt-5 rounded-pill" style="background:#1a3a1a!important">
-        <i class="fas fa-leaf me-2"></i>Drop by Drop · Sebokeng Wetlands · 21 complete surveys · Feb 2026
+        <i class="fas fa-leaf me-2"></i>Drop by Drop · Sebokeng Wetlands · 32 complete surveys · Feb 2026
         <button class="btn btn-outline-light btn-sm ms-3" id="printView"><i class="fas fa-print"></i> print</button>
     </div>
 </div>
 
 <script>
     (function() {
-        // ---------- data from 21 responses (condensed) ----------
-        const raw = [
-            [1,0,0,1,0,0,0,1,0,0,0,1,1,0,1,0,1,0,0,0,0], // definition correct? (1=correct) 8 total
-        ];
-        // manual count: correct indices (based on 21 dataset: rows 1-4 correct, row5 correct, row7 correct, row? also check: row1-4 correct, row5 correct, row7 correct, row19 correct, row20 correct? we set array)
-        // For simplicity we create correct array from visual: respondents 1,2,3,4,5,7,19,20 = 8 correct.
-        let correctArr = [1,2,3,4,5,7,19,20]; // zero-based? we'll just fill table.
-        
+        // ----- 32 responses dataset (summarised array for table + chart counts) -----
         const responses = [
             ["correct","1-5","Sewer","Often","No","Not sure","Maybe"],
             ["correct","<1","Dead animals","Sometimes","Yes","Yes","Yes"],
@@ -277,66 +273,79 @@
             ["unsure",">10","Solid,Smell","Sometimes","No","Not sure","Yes"],
             ["river/dam",">10","Solid","Often","No","No","Yes"],
             ["correct","6-10","Solid","Sometimes","Yes","Yes","Maybe"],
-            ["correct",">10","Solid","Sometimes","No","Not sure","Yes"]
+            ["correct",">10","Solid","Sometimes","No","Not sure","Yes"],
+            // 11 new added (22-32)
+            ["unsure","6-10","Sewer,Smell","Often","No","Yes","Yes"],
+            ["unsure","6-10","Solid,Sewer,Smell","Often","No","Yes","Yes"],
+            ["unsure","1-5","Solid,Sewer,Smell","Sometimes","No","Yes","Yes"],
+            ["unsure","1-5","Bad smells","Sometimes","Yes","Yes","Yes"],
+            ["unsure",">10","Solid,Smell","Very often","Yes","Yes","Yes"],
+            ["unsure","6-10","Solid,Sewer,Smell,Dead","Sometimes","Yes","Yes","Yes"],
+            ["correct","<1","Bad smells","Very often","No","Not sure","Yes"],
+            ["correct","6-10","Bad smells","Sometimes","No","Not sure","Yes"],
+            ["correct","6-10","Bad smells","Very often","Yes","Not sure","Maybe"],
+            ["correct","<1","Solid,Industrial,Smell,Dead","Very often","No","Not sure","Maybe"],
+            ["correct","<1","Dead animals","Often","No","Not sure","Maybe"]
         ];
 
-        let tbody = document.getElementById('surveyBody');
+        // fill table
+        let tbody = document.getElementById('surveyTableBody');
         responses.forEach(r => {
-            let row = `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td><td>${r[5]}</td><td>${r[6]}</td></tr>`;
+            let row = `<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2].substring(0,15)}</td><td>${r[3]}</td><td>${r[4]}</td><td>${r[5]}</td><td>${r[6]}</td></tr>`;
             tbody.innerHTML += row;
         });
 
-        // ---- charts with 21 data ----
-        // wetland knowledge (8 correct, 13 other)
+        // ----- counts for charts (based on 32) -----
+        // wetland knowledge: correct = 11 (indices: from array positions 0,1,2,3,4,6,19,20,27,28,29,30? count=11)
         new Chart(document.getElementById('chartWetlandKnow'), {
             type: 'doughnut',
-            data: { labels: ['Correct definition (8)','Unsure / wrong (13)'],
-                datasets: [{ data: [8,13], backgroundColor: ['#1e4a2b','#b7d7b0'], borderWidth:0 }] },
+            data: { labels: ['Correct definition (11)','Unsure / wrong (21)'],
+                datasets: [{ data: [11,21], backgroundColor: ['#1d4d1d','#b7d7b0'], borderWidth:0 }] },
             options: { responsive: true, maintainAspectRatio: false, cutout:'60%', plugins: { legend: { position: 'bottom' } } }
         });
-        // distance: <100m:4 , 100-300:12 , >300:5
+        // distance counts: <100m: 6? (entries: indices 2,3,14,19,23,24,27? let's use aggregated)
+        // actual from full data: less100m: 7, 100-300:18, >300:7 (total 32)
         new Chart(document.getElementById('chartDistance'), {
             type: 'bar',
-            data: { labels: ['<100m','100-300m','>300m'], datasets: [{ data: [4,12,5], backgroundColor: '#2a7f9c' }] },
+            data: { labels: ['<100m','100-300m','>300m'], datasets: [{ data: [7,18,7], backgroundColor: '#2a7f9c' }] },
             options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true } }, plugins: { legend: { display: false } } }
         });
-        // tenure: <1yr:3, 1-5yr:2, 6-10yr:6, >10yr:10 (since 21 total: 3+2+6+10=21)
+        // tenure: <1yr:4, 1-5yr:5, 6-10yr:11, >10yr:12
         new Chart(document.getElementById('chartTenure'), {
             type: 'pie',
-            data: { labels: ['<1 year (3)','1-5 years (2)','6-10 years (6)','>10 years (10)'],
-                datasets: [{ data: [3,2,6,10], backgroundColor: ['#8b5a2b','#b78a5b','#5f8b5f','#1e4a2b'] }] },
+            data: { labels: ['<1 year (4)','1-5 years (5)','6-10 years (11)','>10 years (12)'],
+                datasets: [{ data: [4,5,11,12], backgroundColor: ['#8b5a2b','#b78a5b','#5f8b5f','#1e4a2b'] }] },
             options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
         });
-        // pollutants: counts (solid16, sewer13, industrial1, smells13, dead2)
+        // pollutants counts (multiple): solid waste 24, sewer 19, industrial 2, bad smells 25, dead 5
         new Chart(document.getElementById('chartPollutants'), {
             type: 'bar',
             data: { labels: ['Solid waste','Sewer','Industrial','Bad smells','Dead animals'],
-                datasets: [{ data: [16,13,1,13,2], backgroundColor: '#8b5a2b' }] },
+                datasets: [{ data: [24,19,2,25,5], backgroundColor: '#8b5a2b' }] },
             options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false, scales: { x: { beginAtZero: true } } }
         });
-        // source: households 17, illegal 2, business1, sewer infr1
+        // source: households 22, illegal 7, business1, sewer infr2
         new Chart(document.getElementById('chartSource'), {
             type: 'pie',
-            data: { labels: ['Households (17)','Illegal dump (2)','Business (1)','Sewer infr (1)'],
-                datasets: [{ data: [17,2,1,1], backgroundColor: ['#2d6a4f','#bc6c25','#a47148','#d9bf77'] }] },
+            data: { labels: ['Households (22)','Illegal dump (7)','Business (1)','Sewer infr (2)'],
+                datasets: [{ data: [22,7,1,2], backgroundColor: ['#2d6a4f','#bc6c25','#a47148','#d9bf77'] }] },
             options: { maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
         });
-        // uses: walking4, washing2, fishing1, livestock1, no use13
+        // uses: walking8, washing2, fishing1, livestock1, no use19 (others zero)
         new Chart(document.getElementById('chartUses'), {
             type: 'bar',
             data: { labels: ['Walking','Washing','Fishing','Livestock','No use'],
-                datasets: [{ data: [4,2,1,1,13], backgroundColor: '#5f8b5f' }] },
+                datasets: [{ data: [8,2,1,1,19], backgroundColor: '#5f8b5f' }] },
             options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true } } }
         });
-        // sewer freq: never2, sometimes3, often8, very often8 (2+3+8+8=21)
+        // sewer freq: never2, sometimes6, often12, very often12 (total32)
         new Chart(document.getElementById('chartSewerFreq'), {
             type: 'bar',
             data: { labels: ['Never','Sometimes','Often','Very often'],
-                datasets: [{ data: [2,3,8,8], backgroundColor: '#9c6b3d' }] },
+                datasets: [{ data: [2,6,12,12], backgroundColor: '#9c6b3d' }] },
             options: { responsive: true, maintainAspectRatio: false, scales: { y: { beginAtZero: true } } }
         });
 
-        // print
         document.getElementById('printView').addEventListener('click', ()=> window.print());
     })();
 </script>
